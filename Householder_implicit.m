@@ -1,4 +1,4 @@
-function [L,R] = Householder_explicit(A)
+function [L,R] = Householder_implicit(A)
 [m,n] = size(A);
 R = A;
 L = zeros(m,n);
