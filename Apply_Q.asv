@@ -1,0 +1,8 @@
+function [y] = Apply_Q(L,b)
+[m,n] = size(L);
+y = zeros(n,1);
+x = b;
+for k = 1:n
+    x(k:m) = x(k:m)
+end
+end
