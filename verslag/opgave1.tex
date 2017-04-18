@@ -1,1 +1,19 @@
-blablabla
+De Householder transformatiematrix
+$$F=I - 2\frac{vv^*}{v^*v}$$
+heeft als eigenwaarden $-1$ en $1$ en als eigenvectoren respectievelijk $v$ en $w$ met $w \perp v$. Deze resultaten zijn als volgt bekomen:
+De Householder transformatiematrix $F$ is symmetrisch 
+$$F^* = (I - 2\frac{vv^*}{v^*v})^* = I - 2\frac{vv^*}{v^*v} = F$$
+en unitair
+$$F^*F = FF^* = (I - 2\frac{vv^*}{v^*v})(I - 2\frac{vv^*}{v^*v}) = I - 4\frac{vv^*}{v^*v} + 4\frac{v(v^*v)v^*}{(v^{*}v)^2} = I.$$
+Omdat $F$ unitair is, moeten de eigenwaarden van $F$ op de complexe eenheidscirkel gelegen zijn.
+Omdat $F$ re\"eel en symmetrisch is, zijn de eigenwaarden re\"ele getallen.
+Hieruit volgt dat de eigenwaarden enkel $\pm 1$ kunnen zijn.
+
+Als we nu $Fv$ uitrekenen, bekomen we
+$$Fv = v - 2\frac{vv^*}{v^*v}v = -v.$$
+Hieruit volgt dat $v$ en eigenvector is bijhorende bij de eigenwaarde $-1$.
+Neem nu $w$ met $w \perp v$ en we rekenen $Fw$ uit, dan bekomen we
+$$Fw = w - 2\frac{vv^*}{v^*v}w = w,$$
+want $v^*w = 0$. Hieruit volgt das $w$ een eigenvector is bijhorende bij de eigenwaarde $1$.
+
+Geometrisch gezien komt dit overeen met een spiegeling over de $w$-as. Neem een vector $a$ en ontbind die in een compontent volgens de $v$-as en een component volgens de $w$-as. De component volgens de $v$-as zal vermenigvuldigt worden met $-1$ en die volgens de $w$-as met $1$. Zo bekomen we een spiegeling rond de $w$-as.
