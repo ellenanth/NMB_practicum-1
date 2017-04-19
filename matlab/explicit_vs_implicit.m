@@ -3,12 +3,9 @@ import Householder_implicit.*;
 import Apply_Q.*;
 
 clear;
-n=10;
-cond = 1;
-A=zeros(n,n);
-for i = 1:n
-    A(i,1:n) = rand(n,1);
-end
+n=1000;
+cond = 10^8;
+A = rand(n);
 [U,S,V] = svd(A,0);
 S = eye(size(S));
 S(1,1) = cond; %conditiegetal
@@ -33,9 +30,14 @@ timing_imp = toc;
 %compare
 disp(timing_exp);
 disp(timing_imp);
-rb_exp = norm(b-A*x_exp)/norm(b);
-rb_imp = norm(b-A*x_imp)/norm(b);
 dx_exp = norm(x_exp-x_matlab)/norm(x_matlab);
+disp(dx_exp);
 dx_imp = norm(x_imp-x_matlab)/norm(x_matlab);
+disp(dx_imp);
+rb_exp = norm(b-A*x_exp)/norm(b);
+disp(rb_exp);
+rb_imp = norm(b-A*x_imp)/norm(b);
+disp(rb_imp);
+
 
 
