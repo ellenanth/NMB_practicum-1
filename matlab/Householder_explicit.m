@@ -6,7 +6,10 @@ for k = 1:n
     v=zeros(m,1);
     v(k:m)=R(k:m,k);
     v(k)=v(k)+norm(v);
-    v = v./norm(v,2);
+    norm_v = norm(v,2);
+    if norm_v ~= 0
+        v = v./norm(v,2);
+    end
     V(1:m,k) = v;
     R(k:m,k:n) = R(k:m,k:n) - 2*v(k:m)*(v(k:m)'*R(k:m,k:n));
 end

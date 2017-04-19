@@ -3,8 +3,8 @@ import Householder_implicit.*;
 import Apply_Q.*;
 
 clear;
-n=1000;
-cond = 10^8;
+n=10;
+cond = 10^4;
 A = rand(n);
 [U,S,V] = svd(A,0);
 S = eye(size(S));
