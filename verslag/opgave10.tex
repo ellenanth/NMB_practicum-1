@@ -1,0 +1,36 @@
+Een algoritme in pseudo-code dat alle eigenwaarden van een symmetrische tridiagonale matrix in het interval [a,b) berekent tot op een bepaalde tolerantie met behulp van de bisectie-methode, is te vinden in algoritme \ref{bisectie}.
+
+\begin{algorithm}
+\centering
+\caption{Bisectie-methode}
+    \label{bisectie}
+\begin{algorithmic}
+\State{queue = [[a,b)]}
+\While{queue niet leeg}
+\State{Haal eerste interval uit de queue}
+\State{$Sturm_{links}$ = aantal tekenwisselingen in de Sturm-rij van A-linkergrens*I}
+\State{$Sturm_{rechts}$ = aantal tekenwisselingen in de Sturm-rij van A-rechtergrens*I}
+\State{\#eigenwaarden = $Sturm_{rechts}$ - $Sturm_{links}$}
+\State{midden = 0.5*(rechtergrens - linkergrens)}
+
+\If {\#eigenwaarden == 1}
+	\If{midden $<$ tolerantie}
+		\State{Voeg linkergrens+midden toe als eigenwaarde}
+	\Else
+    \State {Voeg [linkergrens,linkergrens+midden] en [linkergrens+midden,rechtergrens] vooraan bij in de queue}
+    \EndIf
+\ElsIf {\#eigenwaarden $>$ 1}
+        \State {Voeg [linkergrens,linkergrens+midden] en [linkergrens+midden,rechtergrens] vooraan bij in de queue}
+\EndIf
+\EndWhile
+\end{algorithmic}
+\end{algorithm}
+
+Als eerste voorbeeld nemen we de tridiagonale, symmetrische en re\"ele matrix
+$$A = \begin{bmatrix} 
+1 &1 &0 &0\\
+1 &0 &1 &0 \\
+0 &1 &2 &-1\\
+0 &0 &1 &-1
+\end{bmatrix}.$$
+Als we hieruit de eigenwaarden willen berekenen die tussen 

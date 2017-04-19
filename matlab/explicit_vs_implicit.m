@@ -3,7 +3,7 @@ import Householder_implicit.*;
 import Apply_Q.*;
 
 clear;
-n=10;
+n=1000;
 cond = 10^4;
 A = rand(n);
 [U,S,V] = svd(A,0);
