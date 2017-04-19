@@ -7,4 +7,8 @@ X3 = eig(A(1:3,1:3));
 Y3 = [3; 3; 3];
 X4 = eig(A);
 Y4 = [4; 4; 4; 4];
-plot(X1, Y1, 'bo-' , X2, Y2, 'go-' , X3, Y3, 'ro-' , X4, Y4, 'co-');
+X5 = [0;0];
+Y5 = [0;5];
+plot(X1, Y1, 'bx-' , X2, Y2, 'gx-' , X3, Y3, 'rx-' , X4, Y4, 'cx-', X5, Y5, 'w.');
+xlabel('eigenvalue')
+ylabel('size of principal submatrix')
