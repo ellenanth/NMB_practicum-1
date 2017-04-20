@@ -3,4 +3,4 @@ C = [1 5 0 0;
     0 6 3 7;
     0 0 7 4 ];
  E_echt_C = eig(C);
- E_bis_C = bisection(C,-2,6,10^(-2));
+ E_bis_C = bisection(C,0,11.4,10^(-1));

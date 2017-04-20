@@ -37,17 +37,8 @@ $$A = \begin{bmatrix}
 \end{bmatrix}$$
 Als we de eigenwaarden van deze matrix willen berekenen in het interval [-2,6) tot op een tolerantie $10^{-2}$, dan vinden we we eigenwaarden [-1,3359375; 5,7734375]. Deze komen overeen met de 'exacte' eigenwaarden [-1,32970777874292; 5,77851991186833] berekend met de functie eig($A$) van MATLAB. Als we beide resultaten afronden tot op twee cijfers na de komma, zien we inderdaad dat de eigenwaarden gevonden zijn tot op de gegeven absolute fout.
 
-Als tweede voorbeeld genereren we de random symmetrische, tridiagonale en re\"ele matrix $B \in \mathbb{R}^{n \times n}$ MATLAB met $n = 10$. De diagonalen zijn berekend met de functie rand($n$) en rand($n-1$). De elementen van de matrix $B$ zijn hier afegrond tot op 4 cijfers na de komma.
- $$B = \begin{bmatrix}
-0,4170	&0,2068	&0	&0	&0	&0	&0	&0	&0	&0 \\
-0,2068	&0,9718	&0,6539	&0	&0	&0	&0	&0	&0	&0 \\
-0	&0,6539	&0,9880	&0,0721	&0	&0	&0	&0	&0	&0 \\
-0	&0	&0,0721	&0,8641	&0,4067	&0	&0	&0	&0	&0 \\
-0	&0	&0	&0,4067	&0,3889	&0,6669	&0	&0	&0	&0 \\
-0	&0	&0	&0	&0,6669	&0,4547	&0,9337	&0	&0	&0 \\
-0	&0	&0	&0	&0	&0,9337	&0,2467	&0,8110	&0	&0 \\
-0	&0	&0	&0	&0	&0	&0,8110 &0,7844	&0,4845	&0 \\
-0	&0	&0	&0	&0	&0	&0	&0,4845	&0,8828	&0,7567 \\
-0	&0	&0	&0	&0	&0	&0	&0	&0,7567	&0,9137 \\
-\end{bmatrix}$$
-Deze matrix heeft in totaal 10 eigenwaraden. Als we nu enkel ge\"interesseerd zijn in de eigenwaarden tussen 0 en 1 tot op minstens $10^{-10}$ nauwkeurig, vinden we met behulp van de bisecite-methode de eigenwaarden [0,155349893786479; 0,212609510694165; 0,511023909028154; 0,768950582772959]. Deze komen overeen met de 'exacte' eigenwaarden [0,155349893779548; 0,212609510637192; 0,511023909027886; 0,768950582751513] berekend met de functie eig($B$) in MATLAB. We zien dat de resultaten bekomen door de bisectie-methode inderdaad juist zijn tot op de gegeven tolerantie.
+Een interessant testprobleem is een random symmetrische, tridiagonale en re\"ele matrix $B \in \mathbb{R}^{n \times n}$ MATLAB met $n = 100$. De diagonalen zijn berekend met de functie rand($n$) en rand($n-1$). We zoeken naar de eigenwaarden in het interval [0,1) tot op een tolerantie $10^{-2}$. De matrix waarmee dit getest is, wordt hier niet weergegeven omdat deze veel te groot is. Het interessante aan deze matrix is dat de eigenwaarden die tussen 0 en 1 gelegen zijn, meestal dichter bij elkaar liggen dan de opgegeven tolerantie. Het algoritme dat hierboven beschreven wordt, kan toch nog steeds onderscheid maken tussen de verschillende eigenwaarden. Zo vindt het bijvoorbeeld als eerste twee eigenwaarden 0,03515625 en 0,04296875 voor de eigenwaarden (berekend met de eig() functie van MATLAB) 0,0340437309188287 en 0,0441523470170203.
+
+Een volgend interessant testprobleem wordt bekomen door eigenwaarden als grens te nemen. Theoretisch gezien mag de eigenwaarde die de rechtergrens voorstelt niet gevonden worden. Dit is echter soms toch het geval (zeker voor grote matrices). Dit komt doordat de elementen van de Sturm-rij opgesteld worden aan de hand van vorige elementen. Zo kunnen reken- en afrondingsfouten zich voortplanten.
+
+Ook is er tijdens het testen opgevallen dat de gevraagde nauwkeurigheid niet altijd bereikt wordt voor alle eigenwaarden. Dit komt doordat wanneer de grens van een te onderzoeken interval dicht bij een eigenwaarde komt, de Sturm-rij van $A-xI$ slecht geconditioneerd is.
