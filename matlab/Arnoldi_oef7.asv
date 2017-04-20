@@ -1,11 +1,10 @@
 clear;
-A = sprand(1000,1000,0.1);
+A = sprand(1000,1000,0.01);
 b = rand([1000,1]);
 maxit = 100;
-k=100;
 [H, Q, Ritz] = arnoldi(A, b, maxit);
 
-E = eigs(A,k);
+E = eigs(A, 10);
 X = zeros(1,maxit);
 for it=1:maxit
     n=Ritz(1,it);
@@ -15,8 +14,6 @@ for it=1:maxit
        Y(1, X_size+1) = real(Ritz(i+1,it));
     end
 end
-X_E = zeros(1,k)+101;
+X_E = zeros(1,10)+
 Y_E = real(E');
 plot(X,Y, 'b.',X_E,Y_E,'r.');
-xlabel('aantal iteratiestappen n');
-ylabel('eigenwaarde');
