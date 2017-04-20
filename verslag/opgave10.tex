@@ -1,6 +1,6 @@
 Een algoritme in pseudo-code dat alle eigenwaarden van een symmetrische, tridiagonale en re\"ele matrix in het interval [a,b) berekent tot op een bepaalde tolerantie met behulp van de bisectie-methode, is te vinden in algoritme \ref{bisectie}.
 
-\begin{algorithm}
+\begin{algorithm}[H]
 \centering
 \caption{Bisectie-methode}
     \label{bisectie}
@@ -8,8 +8,8 @@ Een algoritme in pseudo-code dat alle eigenwaarden van een symmetrische, tridiag
 \State{queue = [[a,b)]}
 \While{queue niet leeg}
 \State{Haal eerste interval uit de queue}
-\State{$Sturm_{links}$ = aantal tekenwisselingen in de Sturm-rij van A-linkergrens*I}
-\State{$Sturm_{rechts}$ = aantal tekenwisselingen in de Sturm-rij van A-rechtergrens*I}
+\State{$Sturm_{links}$ = \#tekenwisselingen in de Sturm-rij van A-linkergrens*I}
+\State{$Sturm_{rechts}$ = \#tekenwisselingen in de Sturm-rij van A-rechtergrens*I}
 \State{\#eigenwaarden = $Sturm_{rechts}$ - $Sturm_{links}$}
 \State{midden = 0.5*(rechtergrens - linkergrens)}
 
@@ -26,7 +26,13 @@ Een algoritme in pseudo-code dat alle eigenwaarden van een symmetrische, tridiag
 \end{algorithmic}
 \end{algorithm}
 
-Deze methode werd uitgeschreven in MATLAB (zie bijgevoegde MATLAB-code) en werd toegepast op enkele symmetrische, tridiagonale en re\"ele matrices.
+
+Deze methode werd uitgeschreven in MATLAB (zie onderstaande code) en werd toegepast op enkele symmetrische, tridiagonale en re\"ele matrices.
+
+\lstinputlisting[
+  style      = Matlab-editor,
+  basicstyle = \mlttfamily,
+]{bisection.m}
 
 Als eerste voorbeeld nemen we de tridiagonale, symmetrische en re\"ele matrix $A \in \mathbb{R}^{n \times n}$ met $n=4$.
 $$A = \begin{bmatrix} 
