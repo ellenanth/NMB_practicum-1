@@ -41,4 +41,4 @@ Een interessant testprobleem is een random symmetrische, tridiagonale en re\"ele
 
 Een volgend interessant testprobleem wordt bekomen door eigenwaarden als grens te nemen. Theoretisch gezien mag de eigenwaarde die de rechtergrens voorstelt niet gevonden worden. Dit is echter soms toch het geval (zeker voor grote matrices). Dit komt doordat de elementen van de Sturm-rij opgesteld worden aan de hand van vorige elementen. Zo kunnen reken- en afrondingsfouten zich voortplanten.
 
-Ook is er tijdens het testen opgevallen dat de gevraagde nauwkeurigheid niet altijd bereikt wordt voor alle eigenwaarden. Dit komt doordat wanneer de grens van een te onderzoeken interval dicht bij een eigenwaarde komt, de Sturm-rij van $A-xI$ slecht geconditioneerd is.
+Ook is er tijdens het testen opgevallen dat de gevraagde nauwkeurigheid niet altijd bereikt wordt voor alle eigenwaarden. Dit komt doordat wanneer de grens van een te onderzoeken interval dicht bij een eigenwaarde komt, de Sturm-rij van $A-xI$ slecht geconditioneerd is. Het laatste element ligt dan rond 0, waardoor er snel een tekenwissel te veel of te weinig is.
