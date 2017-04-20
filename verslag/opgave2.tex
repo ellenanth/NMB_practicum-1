@@ -1,4 +1,11 @@
-EVENTUEEL MATLAB CODE
+Zie de bijgevoegde MATLAB-files voor de code van de Householder\_explicit, Householder\_implicit en de Apply\_Q functies. De expliciete methode genereert de matrix $Q$ door na de impliciete methode een nieuwe loop uit te voeren. Deze loop is gebaseerd op de functie om het product $Qx$ te berekenen, met voor $x$ telkens een eenheidsvector.
+
+De tijd om het stelsel $Ax=b$ op te lossen met de expliciete en de impliciete methode worden respectievelijk weergegeven in tabel \ref{snelheid_exp} en tabel \ref{snelheid_imp}. Hier zien we dat de tijd om het stelsel op te lossen een orde-grootte kleiner is met de impliciete methode dan met de expliciete methode.
+
+De ordegroottes van de relatieve fout $\lVert \delta x \rVert/\lVert x \rVert$ van de oplossing voor de expliciete en de impliciete methode worden respectievelijk weergegeven in tabel \ref{dx_exp} en tabel \ref{dx_imp}.
+De ordegroottes van de verhouding van de norm van het residu op de norm van de b-vector $\lVert r \rVert/\lVert b \rVert$ van de oplossing voor de expliciete en de impliciete methode worden respectievelijk weergegeven in tabel \ref{rb_exp} en \ref{rb_imp}. Deze waarden vullen we nu in in de vergelijking
+$$ \frac{\lVert \delta x \rVert}{\lVert x \rVert} \leq \kappa(A) \frac{\lVert r \rVert}{\lVert b \rVert}.$$
+We zien hier dat het linkerlid van de ongelijkheid veel kleiner is dan het rechterlid naarmate $\kappa$ groter wordt. Voor $\kappa = 1$ zien we namelijk dat het linkerlid ongeveer gelijk is aan het rechterlid. Voor $\kappa = 10^8$ is er veel meer verschil tussen de twee leden. De achterwaartse stabiliteit van de twee methodes is ongeveer hetzelfde. 
 
 \begin{table}
 \begin{center}
@@ -35,8 +42,8 @@ n $\backslash$ $\kappa$ & $1$ & $10^4$ & $10^8$ \\\hline
 1000 & $10^{-14}$ & $10^{-13}$ & $10^{-9}$
 \end{tabular}
 \end{center}
-\caption{De ordegrootte van de relatieve fout van de expliciete methode}
-\label{dw_exp}
+\caption{De ordegrootte van $\lVert \delta x \rVert/\lVert x \rVert$ van de expliciete methode}
+\label{dx_exp}
 \end{table}
 
 \begin{table}
@@ -48,7 +55,7 @@ n $\backslash$ $\kappa$ & $1$ & $10^4$ & $10^8$ \\\hline
 1000 & $10^{-14}$ & $10^{-13}$ & $10^{-9}$
 \end{tabular}
 \end{center}
-\caption{De ordegrootte van de relatieve fout van de impliciete methode}
+\caption{De ordegrootte van $\lVert \delta x \rVert/\lVert x \rVert$ van de impliciete methode}
 \label{dx_imp}
 \end{table}
 
@@ -58,10 +65,10 @@ n $\backslash$ $\kappa$ & $1$ & $10^4$ & $10^8$ \\\hline
 n $\backslash$ $\kappa$ & $1$ & $10^4$ & $10^8$ \\\hline
 10 & $10^{-16}$ & $10^{-13}$ & $10^{-9}$ \\
 100 & $10^{-15}$ & $10^{-13}$ & $10^{-10}$ \\
-1000 & $10^{-15}$ & $10^{-13}$ & $10^{-10}$
+1000 & $10^{-14}$ & $10^{-13}$ & $10^{-10}$
 \end{tabular}
 \end{center}
-\caption{De ordegrootte van de verhouding van de norm van het residu op de b-vector van de expliciete methode}
+\caption{De ordegrootte van $\lVert r \rVert/\lVert b \rVert$ van de expliciete methode}
 \label{rb_exp}
 \end{table}
 
@@ -71,9 +78,9 @@ n $\backslash$ $\kappa$ & $1$ & $10^4$ & $10^8$ \\\hline
 n $\backslash$ $\kappa$ & $1$ & $10^4$ & $10^8$ \\\hline
 10 & $10^{-16}$ & $10^{-13}$ & $10^{-9}$ \\
 100 & $10^{-15}$ & $10^{-13}$ & $10^{-10}$ \\
-1000 & $10^{-15}$ & $10^{-13}$ & $10^{-10}$
+1000 & $10^{-14}$ & $10^{-13}$ & $10^{-10}$
 \end{tabular}
 \end{center}
-\caption{De ordegrootte van de verhouding van de norm van het residu op de b-vector van de impliciete methode}
+\caption{De ordegrootte van $\lVert r \rVert/\lVert b \rVert$ van de impliciete methode}
 \label{rb_imp}
 \end{table}
