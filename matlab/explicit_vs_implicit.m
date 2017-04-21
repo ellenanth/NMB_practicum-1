@@ -4,7 +4,7 @@ import Apply_Q.*;
 
 clear;
 n=1000;
-cond = 10^4;
+cond = 10^8;
 A = rand(n);
 [U,S,V] = svd(A,0);
 S = eye(size(S));
