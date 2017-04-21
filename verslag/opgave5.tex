@@ -1,9 +1,5 @@
-'relatie tussen 4 methodes'
-Het QR-algoritme zonder shifts is equivalent aan gelijktijdige iteratie toegepast op de eenheidsmatrix
+Het QR-algoritme zonder shifts is equivalent aan gelijktijdige iteratie toegepast op de eenheidsmatrix.
+Het QR-algoritme met of zonder shifts berekent alle eigenwaarden. Met de Rayleigh quotient iteratie kan men 1 eigenwaarde en bijhorende eigenvector bepalen. Bij gelijktijdige iteratie worden de vectoren bepaald die de eigenruimte opspannen, maar geen eigenwaarden.
 
-'aantal eigenwaarden per methode'
-Het QR-algoritme met of zonder shifts berekent alle eigenwaarden. Met de Rayleigh quotiënt iteratie kan men 1 eigenwaarde en bijhorende eigenvector bepalen. Bij gelijktijdige iteratie worden de vectoren bepaald die de eigenruimte opspannen, maar geen eigenwaarden.
-
-'uitspraak toelichten'
-
-'convergentiegedrag tonen'
+Als de shifts gebruikt in het QR-algoritme goede benaderingen zijn voor een eigenwaarde, zal men sneller convergeren naar een eigenvector. Het Rayleigh quotient vormt een goede schatting van de eigenwaarde. Gebruiken we deze waarde in elke iteratie, dan bekomt men dezelfde schatting voor eigenwaarde en eigenvector als bij Rayleigh quotient iteratie die vertrekt vanuit een eenheidsvector. Past men dit toe op elke eenheidsvector en dus op een eenheidsmatrix krijgt men een combinatie van gelijktijdige iteratie en Rayleigh quotient iteratie.
+Het convergentiegedrag van het QR-algoritme met Rayleigh shift kan dus gezien worden als een combinatie van het convergentiegedrag van gelijktijdige iteratie en Rayleigh quotient iteratie. Via gelijktijdige iteratie bekomt men de eigenruimte en via Rayleigh quotient iteratie gaat men de schatting van eigenvector gebruiken als startvector in de Rayleigh quotient iteratie om een nieuwe schatting voor eigenwaarde en -vector te bekomen.
