@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.17)  20 APR 2017 22:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.17)  21 APR 2017 13:34
 entering extended mode
 **./practicum1_verslag.tex
 (practicum1_verslag.tex
@@ -489,49 +489,49 @@ File: ts1fvm.fd 2004/09/07 scalable font definitions for TS1/fvm.
 LaTeX Font Info:    Font shape `TS1/fvm/m/n' will be
 (Font)              scaled to size 8.50006pt on input line 14.
 )
-(Householder_implicit.m [2]) (Apply_Q.m) [3]) (opgave3.tex
+(Householder_implicit.m [2]) (Apply_Q.m) [3]) (opgave3.tex [4]
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 13.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-<afbeeldingen/oef3.jpg, id=21, 702.625pt x 526.96875pt>
+<afbeeldingen/oef3.jpg, id=24, 702.625pt x 526.96875pt>
 File: afbeeldingen/oef3.jpg Graphic file (type jpg)
 
 <use afbeeldingen/oef3.jpg>
 Package pdftex.def Info: afbeeldingen/oef3.jpg used on input line 17.
 (pdftex.def)             Requested size: 241.49895pt x 181.12093pt.
-) [4] (opgave4.tex) (opgave5.tex [5 <./afbeeldingen/oef3.jpg>]) (opgave6.tex) (
-opgave7.tex (Arnoldi_oef7.m [6])
+) (opgave4.tex [5 <./afbeeldingen/oef3.jpg>])
+(opgave5.tex) (opgave6.tex) (opgave7.tex [6] (Arnoldi_oef7.m)
 <afbeeldingen/oef7.jpg, id=37, 1927.2pt x 941.5175pt>
 File: afbeeldingen/oef7.jpg Graphic file (type jpg)
 
 <use afbeeldingen/oef7.jpg>
 Package pdftex.def Info: afbeeldingen/oef7.jpg used on input line 11.
 (pdftex.def)             Requested size: 345.0pt x 168.54639pt.
-) (opgave8.tex (NMB_gmres.m [7 <./afbeeldingen/oef7.jpg>]) <afbeeldingen/oef8_1
-.jpg, id=42, 702.625pt x 526.96875pt>
+) [7] (opgave8.tex (NMB_gmres.m [8 <./afbeeldingen/oef7.jpg>]) <afbeeldingen/oe
+f8_1.jpg, id=45, 702.625pt x 526.96875pt>
 File: afbeeldingen/oef8_1.jpg Graphic file (type jpg)
 
 <use afbeeldingen/oef8_1.jpg>
 Package pdftex.def Info: afbeeldingen/oef8_1.jpg used on input line 14.
 (pdftex.def)             Requested size: 163.8771pt x 122.90492pt.
 
-<afbeeldingen/oef8_5.jpg, id=43, 702.625pt x 526.96875pt>
+<afbeeldingen/oef8_5.jpg, id=46, 702.625pt x 526.96875pt>
 File: afbeeldingen/oef8_5.jpg Graphic file (type jpg)
 
 <use afbeeldingen/oef8_5.jpg>
 Package pdftex.def Info: afbeeldingen/oef8_5.jpg used on input line 23.
 (pdftex.def)             Requested size: 163.8771pt x 122.90492pt.
 
-<afbeeldingen/oef8_10.jpg, id=44, 702.625pt x 526.96875pt>
+<afbeeldingen/oef8_10.jpg, id=47, 702.625pt x 526.96875pt>
 File: afbeeldingen/oef8_10.jpg Graphic file (type jpg)
 
 <use afbeeldingen/oef8_10.jpg>
 Package pdftex.def Info: afbeeldingen/oef8_10.jpg used on input line 32.
 (pdftex.def)             Requested size: 163.8771pt x 122.90492pt.
 
-<afbeeldingen/oef8_100.jpg, id=45, 702.625pt x 526.96875pt>
+<afbeeldingen/oef8_100.jpg, id=48, 702.625pt x 526.96875pt>
 File: afbeeldingen/oef8_100.jpg Graphic file (type jpg)
 
 <use afbeeldingen/oef8_100.jpg>
@@ -541,15 +541,15 @@ Package pdftex.def Info: afbeeldingen/oef8_100.jpg used on input line 41.
 
 LaTeX Warning: Float too large for page by 22.61969pt on input line 48.
 
-) (opgave9.tex [8] [9 <./afbeeldingen/oef8_1.jpg> <./afbeeldingen/oef8_5.jpg> <
-./afbeeldingen/oef8_10.jpg> <./afbeeldingen/oef8_100.jpg>]
-<afbeeldingen/oef9_1.jpg, id=53, 562.1pt x 421.575pt>
+) (opgave9.tex <afbeeldingen/oef9_1.jpg, id=49, 562.1pt x 421.575pt>
 File: afbeeldingen/oef9_1.jpg Graphic file (type jpg)
 
 <use afbeeldingen/oef9_1.jpg>
 Package pdftex.def Info: afbeeldingen/oef9_1.jpg used on input line 14.
 (pdftex.def)             Requested size: 241.49895pt x 181.12575pt.
-) (opgave10.tex
+) [9] [10 <./afbeeldingen/oef8_1.jpg> <./afbeeldingen/oef8_5.jpg> <./afbeelding
+en/oef8_10.jpg> <./afbeeldingen/oef8_100.jpg>]
+(opgave10.tex
 Underfull \hbox (badness 10000) in paragraph at lines 20--21
 [] \T1/cmr/m/n/10 Voeg [lin-ker-grens,linkergrens+midden] en [lin-ker-
  []
@@ -559,13 +559,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--24
 [] \T1/cmr/m/n/10 Voeg [lin-ker-grens,linkergrens+midden] en [lin-ker-
  []
 
-[10 <./afbeeldingen/oef9_1.jpg>] (bisection.m) [11]
+(bisection.m [11 <./afbeeldingen/oef9_1.jpg>])
 Overfull \hbox (9.45975pt too wide) in paragraph at lines 43--45
 \T1/cmr/m/n/10 5,7734375]. Deze ko-men over-een met de 'exacte' ei-gen-waar-den
  [-1,32970777874292;
  []
 
-) [12] (practicum1_verslag.aux) ) 
+[12]) [13] (practicum1_verslag.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
  7964 strings out of 493333
  115207 string characters out of 3139194
@@ -573,29 +577,29 @@ Here is how much of TeX's memory you used:
  11298 multiletter control sequences out of 15000+200000
  16589 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,10n,57p,901b,1600s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Marte\AppData\Local\MiKTeX\2.9\font
-s\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk> <C:\Users\Marte\AppData\Local\MiKTe
-X\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0900.pk> <C:\Users\Marte\AppData\L
-ocal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1000.pk>{C:/Program File
-s/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc} <C:\Users\Marte\AppData\Local\MiKTeX\
-2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\Users\Marte\AppData\Loc
-al\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\Marte\A
-ppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Use
-rs\Marte\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1728.p
-k><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-msy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/bera/fvmr8a.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on practicum1_verslag.pdf (12 pages, 435917 bytes).
+ 42i,10n,57p,901b,1602s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Marte\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
+ecbx1000.pk> <C:\Users\Marte\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
+ec\dpi600\ecrm0900.pk> <C:\Users\Marte\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
+\jknappen\ec\dpi600\ectt1000.pk>{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/ba
+se/8r.enc} <C:\Users\Marte\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec
+\dpi600\ecrm1000.pk> <C:\Users\Marte\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\j
+knappen\ec\dpi600\ecbx1440.pk> <C:\Users\Marte\AppData\Local\MiKTeX\2.9\fonts\p
+k\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\Marte\AppData\Local\MiKTeX\2
+.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1728.pk><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
+10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/bera/fvmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
+onts/symbols/msbm10.pfb>
+Output written on practicum1_verslag.pdf (13 pages, 436843 bytes).
 PDF statistics:
- 298 PDF objects out of 1000 (max. 8388607)
+ 302 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
